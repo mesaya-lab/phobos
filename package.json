@@ -1,0 +1,12 @@
+{
+	"author": "Mesaya <mesaya@email.com>",
+	"engines": {
+		"node": "12.16.1",
+		"yarn": "1.19.2"
+	},
+	"keywords": [
+		"reason",
+		"scale"
+	],
+	"name": "Phobos"
+}
