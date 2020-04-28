@@ -7,5 +7,6 @@ module.exports = {
 		filename: 'phobos.js',
 		path: path.resolve(__dirname, 'distribution')
 	},
+	target: 'node',
 	watch: true
 }
