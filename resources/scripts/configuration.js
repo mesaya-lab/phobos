@@ -5,5 +5,10 @@ export default {
 	},
 	notes:   [ 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B' ],
 	octaves: [ -1, 10 ],
-	scales:  []
+	scales:  [
+		{
+			intervals: [ 1, 1, 0, 1, 1, 1 ],
+			name:      'Major'
+		},
+	]
 }
