@@ -39,6 +39,10 @@ export default {
 			name:      'Minor Pentatonic'
 		},
 		{
+			intervals: [ 1, 1, 0, 1, 1, 0, 1 ],
+			name:      'Mixolydian'
+		},
+		{
 			intervals: [ 1, 0, 1, 1, 0, 1, 1 ],
 			name:      'Natural Minor'
 		},
