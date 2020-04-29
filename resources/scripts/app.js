@@ -10,15 +10,15 @@ class App {
 		console.info('🔭  Phobos\n')
 
 		this.configuration = configuration
+		this.counter = 0
 
 		this.configuration.scales.forEach(scale => {
 			this.configuration.notes.forEach(note => {
 				const
 					{ duration, velocity } = this.configuration.midi,
-					{ octaves } = this.configuration,
-					directory = path.resolve('../scales', scale.name),
-					name = `${ note } ${ scale.name }`,
-					intervals = [ 0, ... scale.intervals ]
+					{ octaves }            = this.configuration,
+					directory              = path.resolve('../scales', scale.name),
+					intervals              = [ 0, ... scale.intervals ]
 
 				let notes = this.shift(note, [ ... this.configuration.notes ])
 
@@ -51,7 +51,12 @@ class App {
 
 				track.addEvent(event)
 
-				const writer = new Writer(track)
+				const
+					writer  = new Writer(track),
+					message = [
+						this.counter % this.configuration.notes.length === 0 ? '\n' : '',
+						`${ note.padEnd(2) } ${ scale.name }`
+					]
 
 				try {
 					if (! fs.existsSync(directory)) {
@@ -59,15 +64,17 @@ class App {
 					}
 
 					fs.writeFileSync(
-						path.resolve(directory, `${ name }.mid`),
+						path.resolve(directory, `${ note } ${ scale.name }.mid`),
 						writer.dataUri().replace(/^data:audio\/midi;base64,/, ''),
 						{ encoding: 'base64' }
 					)
 
-					console.log('💾  Scale saved: %s', name)
+					console.log(... [ '%s💾  Scale saved: %s', ... message ])
 				} catch {
-					console.warn('❗️  Warning: Scale can\'t be saved (%s)', name)
+					console.warn(... [ '%s❗️  Warning: Scale can\'t be saved (%s)', ... message ])
 				}
+
+				this.counter ++
 			})
 		})
 	}
