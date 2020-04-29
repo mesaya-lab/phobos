@@ -46,5 +46,9 @@ export default {
 			intervals: [ 1, 0, 1, 1, 0, 1, 1 ],
 			name:      'Natural Minor'
 		},
+		{
+			intervals: [ 0, 1, 1, 1, 0, 1, 1 ],
+			name:      'Phrygian'
+		},
 	]
 }
