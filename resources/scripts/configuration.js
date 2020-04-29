@@ -11,7 +11,7 @@ export default {
 			name:      'Dorian'
 		},
 		{
-			intervals: [ 1, 0, 1, 1, 0, 2 ],
+			intervals: [ 1, 0, 1, 1, 0, 2, 0 ],
 			name:      'Harmonic Minor'
 		},
 		{
@@ -19,7 +19,11 @@ export default {
 			name:      'Locrian'
 		},
 		{
-			intervals: [ 1, 1, 0, 1, 1, 1 ],
+			intervals: [ 1, 1, 1, 0, 1, 1, 0 ],
+			name:      'Lydian'
+		},
+		{
+			intervals: [ 1, 1, 0, 1, 1, 1, 0 ],
 			name:      'Major'
 		},
 		{
@@ -27,7 +31,7 @@ export default {
 			name:      'Major Pentatonic'
 		},
 		{
-			intervals: [ 1, 0, 1, 1, 1, 1 ],
+			intervals: [ 1, 0, 1, 1, 1, 1, 0 ],
 			name:      'Melodic Minor'
 		},
 		{
