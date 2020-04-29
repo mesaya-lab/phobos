@@ -50,5 +50,9 @@ export default {
 			intervals: [ 0, 1, 1, 1, 0, 1, 1 ],
 			name:      'Phrygian'
 		},
+		{
+			intervals: [ 1, 1, 1, 1, 1, 1 ],
+			name:      'Whole Tone'
+		},
 	]
 }
