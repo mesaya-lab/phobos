@@ -7,6 +7,10 @@ export default {
 	octaves: [ -1, 10 ],
 	scales:  [
 		{
+			intervals: [ 1, 0, 1, 1, 1, 0, 1 ],
+			name:      'Dorian'
+		},
+		{
 			intervals: [ 1, 0, 1, 1, 0, 2 ],
 			name:      'Harmonic Minor'
 		},
