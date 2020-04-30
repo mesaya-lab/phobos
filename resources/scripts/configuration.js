@@ -58,5 +58,9 @@ export default {
 			intervals: [ 1, 1, 1, 1, 1, 1 ],
 			name:      'Whole Tone'
 		},
+		{
+			intervals: [ 1, 2, 1, 1, 2 ],
+			name:      'Yo'
+		},
 	]
 }
