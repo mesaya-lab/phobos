@@ -19,6 +19,10 @@ export default {
 			name:      'Harmonic Minor'
 		},
 		{
+			intervals: [ 1, 0, 3, 0, 3 ],
+			name:      'Hirajoshi'
+		},
+		{
 			intervals: [ 0, 1, 1, 0, 1, 1, 1 ],
 			name:      'Locrian'
 		},
