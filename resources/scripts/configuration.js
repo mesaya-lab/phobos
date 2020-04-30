@@ -15,6 +15,10 @@ export default {
 			name:      'Dorian'
 		},
 		{
+			intervals: [ 0, 2, 1, 1, 1, 0, 0 ],
+			name:      'Enigmatic'
+		},
+		{
 			intervals: [ 1, 0, 1, 1, 0, 2, 0 ],
 			name:      'Harmonic Minor'
 		},
