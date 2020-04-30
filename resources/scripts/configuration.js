@@ -27,6 +27,14 @@ export default {
 			name:      'Hirajoshi'
 		},
 		{
+			intervals: [ 2, 0, 1, 0, 1, 0, 1 ],
+			name:      'Hungarian Major'
+		},
+		{
+			intervals: [ 1, 0, 2, 0, 0, 2, 0 ],
+			name:      'Hungarian Minor'
+		},
+		{
 			intervals: [ 0, 1, 1, 0, 1, 1, 1 ],
 			name:      'Locrian'
 		},
