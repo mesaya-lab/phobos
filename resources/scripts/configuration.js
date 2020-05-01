@@ -91,6 +91,10 @@ export default {
 			name:      'Phrygian'
 		},
 		{
+			intervals: [ 1, 1, 1, 2, 0, 1 ],
+			name:      'Prometheus'
+		},
+		{
 			intervals: [ 1, 1, 1, 1, 1, 1 ],
 			name:      'Whole Tone'
 		},
