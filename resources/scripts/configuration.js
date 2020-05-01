@@ -11,6 +11,10 @@ export default {
 			name:      'Aeolian'
 		},
 		{
+			intervals: [ 2, 0, 2, 0, 2, 0 ],
+			name:      'Augmented'
+		},
+		{
 			intervals: [ 2, 1, 0, 0, 2, 1 ],
 			name:      'Blues'
 		},
