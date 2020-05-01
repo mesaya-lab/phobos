@@ -35,6 +35,10 @@ export default {
 			name:      'Hungarian Minor'
 		},
 		{
+			intervals: [ 1, 1, 0, 1, 1, 1, 0 ],
+			name:      'Ionian'
+		},
+		{
 			intervals: [ 0, 1, 1, 0, 1, 1, 1 ],
 			name:      'Locrian'
 		},
