@@ -87,6 +87,14 @@ export default {
 			name:      'Natural Minor'
 		},
 		{
+			intervals: [ 0, 1, 1, 1, 1, 1, 0 ],
+			name:      'Neapolitan Major'
+		},
+		{
+			intervals: [ 0, 1, 1, 1, 0, 2, 0 ],
+			name:      'Neapolitan Minor'
+		},
+		{
 			intervals: [ 0, 2, 0, 0, 1, 2, 0 ],
 			name:      'Persian'
 		},
