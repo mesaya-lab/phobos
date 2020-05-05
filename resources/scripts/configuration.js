@@ -67,6 +67,10 @@ export default {
 			name:      'Major'
 		},
 		{
+			intervals: [ 1, 1, 0, 0, 1, 1, 1 ],
+			name:      'Major Locrian'
+		},
+		{
 			intervals: [ 1, 1, 2, 1, 2 ],
 			name:      'Major Pentatonic'
 		},
