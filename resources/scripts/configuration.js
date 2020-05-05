@@ -31,6 +31,10 @@ export default {
 			name:      'Enigmatic'
 		},
 		{
+			intervals: [ 1, 1, 0, 1, 0, 2, 0 ],
+			name:      'Harmonic Major'
+		},
+		{
 			intervals: [ 1, 0, 1, 1, 0, 2, 0 ],
 			name:      'Harmonic Minor'
 		},
