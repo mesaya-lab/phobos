@@ -55,6 +55,10 @@ export default {
 			name:      'Hungarian Minor'
 		},
 		{
+			intervals: [ 0, 3, 1, 0, 3 ],
+			name:      'In'
+		},
+		{
 			intervals: [ 0, 3, 1, 2, 1 ],
 			name:      'Insen'
 		},
