@@ -35,7 +35,7 @@ class App {
 					notes
 				)
 
-				let midi = []
+				let midi = [ ]
 
 				for (let i = Math.min(... octaves); i < Math.max(... octaves); i ++) {
 					notes.forEach(note => {
