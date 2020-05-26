@@ -23,6 +23,10 @@ export default {
 			name:      'Blues'
 		},
 		{
+			intervals: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ],
+			name:      'Chromatic'
+		},
+		{
 			intervals: [ 1, 0, 1, 1, 1, 0, 1 ],
 			name:      'Dorian'
 		},

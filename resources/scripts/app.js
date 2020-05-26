@@ -13,7 +13,7 @@ class App {
 		this.counter = 0
 
 		this.configuration.scales.forEach(scale => {
-			this.configuration.notes.forEach(note => {
+			this.configuration.notes.some(note => {
 				const
 					{ duration, velocity } = this.configuration.midi,
 					{ octaves }            = this.configuration,
@@ -52,10 +52,11 @@ class App {
 				track.addEvent(event)
 
 				const
+					chromatic = scale.name === 'Chromatic',
 					writer  = new Writer(track),
 					message = [
 						this.counter % this.configuration.notes.length === 0 ? '\n' : '',
-						`${ note.padEnd(2) } ${ scale.name }`
+						chromatic ? scale.name : `${ note.padEnd(2) } ${ scale.name }`
 					]
 
 				try {
@@ -64,7 +65,10 @@ class App {
 					}
 
 					fs.writeFileSync(
-						path.resolve(directory, `${ note } ${ scale.name }.mid`),
+						path.resolve(
+							directory,
+							chromatic ? `${ scale.name }.mid` : `${ note } ${ scale.name }.mid`
+						),
 						writer.dataUri().replace(/^data:audio\/midi;base64,/, ''),
 						{ encoding: 'base64' }
 					)
@@ -74,7 +78,11 @@ class App {
 					console.warn(... [ '%s❗️  Warning: Scale can\'t be saved (%s)', ... message ])
 				}
 
-				this.counter ++
+				if(chromatic) {
+					return true
+				} else {
+					this.counter ++
+				}
 			})
 		})
 	}
