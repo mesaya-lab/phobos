@@ -23,7 +23,7 @@ export default {
 			name:      'Blues'
 		},
 		{
-			intervals: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ],
+			intervals: [ ],
 			name:      'Chromatic'
 		},
 		{
@@ -61,6 +61,10 @@ export default {
 		{
 			intervals: [ 1, 1, 0, 1, 1, 1, 0 ],
 			name:      'Ionian'
+		},
+		{
+			intervals: [ 0, 3, 0, 3, 1 ],
+			name:      'Iwato'
 		},
 		{
 			intervals: [ 0, 1, 1, 0, 1, 1, 1 ],
