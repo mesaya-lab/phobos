@@ -3,7 +3,7 @@
 	"dependencies": {
 		"@tonaljs/tonal": "3.6.0",
 		"midi-writer-js": "1.7.2",
-		"webpack": "4.43.0",
+		"webpack": "5.94.0",
 		"webpack-cli": "3.3.11"
 	},
 	"engines": {
